@@ -12,6 +12,7 @@ if (process.argv[2] === '--out') {
   path = process.argv[2];
 }
 
+// checks to see if beginning of arg is website
 if (path.slice(0, 4) === 'http') {
   webCat(path, out);
 } else {
